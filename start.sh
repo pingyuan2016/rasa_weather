@@ -1,0 +1,1 @@
+rasa run actions & rasa run -m models --enable-api --log-file out.log -p 5500 --cors "*"
