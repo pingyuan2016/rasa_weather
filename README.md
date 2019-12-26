@@ -30,7 +30,7 @@ total_word_feature_extractor.dat需要下载：
 
 从 [https://github.com/howl-anderson/MITIE_Chinese_Wikipedia_corpus](https://github.com/howl-anderson/MITIE_Chinese_Wikipedia_corpus/releases) 下载，解压缩后放置到 `data/total_word_feature_extractor.dat`
 
-天气预测调用的[心知天气](https://www.seniverse.com/)的接口，需要申请api key放入到api.py中
+天气预测调用的[心知天气](https://www.seniverse.com/)的接口，需要申请api key（私钥）放入到api.py中
 
 ## 训练
 
