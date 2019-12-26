@@ -11,7 +11,6 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.forms import FormAction
 from requests import (
     ConnectionError,
     HTTPError,
@@ -20,16 +19,10 @@ from requests import (
 )
 
 from api import get_weather_by_day
-from rasa_sdk import Action
 from rasa_sdk.events import SlotSet
 
 
 class ActionReportWeather(Action):
-    # RANDOMIZE = True
-
-    # @staticmethod
-    # def required_fields():
-    #     return ["address", "date-time"]
 
     def name(self) -> Text:
         return "action_report_weather"
