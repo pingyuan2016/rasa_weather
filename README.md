@@ -13,13 +13,17 @@ rasa = 1.5.3
 注：最好在python虚拟环境中安装，例如virtualenv
 
 安装 rasa
+
 `pip install rasa-x --extra-index-url https://pypi.rasa.com/simple`
 
 安装mitie
+
 `pip install git+https://github.com/mit-nlp/MITIE.git`
+
 `pip install rasa[mitie]`
 
 安装jieba
+
 `pip install jieba`
 
 ## 数据准备
@@ -81,4 +85,5 @@ rasa执行（启动rasa接口，指定端口，cors是解决跨域名的问题�
 ## 在线演示
 
 [天气预报聊天机器人](http://www.nlpport.com/freedom/weather/)
+
 [个人网站](http://www.nlpport.com)
