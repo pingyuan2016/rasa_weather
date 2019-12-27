@@ -11,7 +11,7 @@ import os
 import requests
 import json
 
-KEY = os.getenv('SENIVERSE_KEY', '********')  # API key要去https://www.seniverse.com/申请
+KEY = os.getenv('SENIVERSE_KEY', '*********')  # API key(心知天气的私钥)
 UID = ""  # 用户ID, TODO: 当前并没有使用这个值,签名验证方式将使用到这个值
 
 LOCATION = 'beijing'  # 所查询的位置，可以使用城市拼音、v3 ID、经纬度等
