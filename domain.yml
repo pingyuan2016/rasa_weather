@@ -29,7 +29,7 @@ templates:
   utter_report_weather:
   - text: '{matches}'
   utter_default:
-  - text: 系统不明白您说的话
+  - text: 系统不明白您说的话！
 actions:
 - utter_greet
 - utter_ask_address

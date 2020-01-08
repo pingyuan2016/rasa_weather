@@ -9,7 +9,6 @@ def home():
     return render_template('index.html')
 
 
-
 # 注意这里如果登录失败则会回到登录页面并会有Bad boy消息产生
 if __name__ == '__main__':
     app.run()
