@@ -1064,7 +1064,7 @@
       {
         "intent": "weather",
         "entities": [
-           {
+          {
             "start": 3,
             "end": 5,
             "value": "现在",
@@ -1294,6 +1294,60 @@
           }
         ],
         "text": "为什么下星期一马来西亚天气那么凉快"
+      },
+      {
+        "intent": "weather_address_date-time",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "今天",
+            "entity": "date-time"
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "value": "上海",
+            "entity": "address"
+          }
+        ],
+        "text": "上海今天有雨吗？"
+      },
+      {
+        "intent": "weather_address_date-time",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "明天",
+            "entity": "date-time"
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "address"
+          }
+        ],
+        "text": "北京明天有雨吗？"
+      },
+      {
+        "intent": "weather_address_date-time",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "今天",
+            "entity": "date-time"
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "value": "上海",
+            "entity": "address"
+          }
+        ],
+        "text": "上海今天下雨吗？"
       },
       {
         "intent": "weather",

@@ -32,14 +32,18 @@ class ActionReportWeather(Action):
                domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         address = tracker.get_slot('address')
         date_time = tracker.get_slot('date-time')
-
+        if date_time is None:
+            date_time = '今天'
         date_time_number = text_date_to_number_date(date_time)
 
         if isinstance(date_time_number, str):  # parse date_time failed
             return [SlotSet("matches", "暂不支持查询 {} 的天气".format([address, date_time_number]))]
+        elif date_time_number is None:
+            return [SlotSet("matches", "暂不支持查询 {} 的天气".format([address, date_time]))]
         else:
             print('address', address)
             print('date_time',date_time)
+            print('date_time_number',date_time_number)
             weather_data = get_text_weather_date(address, date_time, date_time_number)
             return [SlotSet("matches", "{}".format(weather_data))]
 
@@ -51,7 +55,7 @@ def get_text_weather_date(address, date_time, date_time_number):
         text_message = "{}".format(e)
     else:
         text_message_tpl = """
-            {} {} ({}) 的天气情况为：白天：{}；夜晚：{}；气温：{}-{} °C
+            {} {} ({}) 的天气情况为：白天：{}；夜晚：{}；气温：{}°C / {}°C
         """
         text_message = text_message_tpl.format(
             result['location']['name'],

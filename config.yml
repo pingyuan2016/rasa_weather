@@ -7,25 +7,28 @@ pipeline:
 - name: ner_synonyms
 - name: intent_featurizer_mitie
 - name: intent_classifier_sklearn
-#language: "en"
-#
+
+
+#language: "zh"
 #pipeline:
 #- name: "MitieNLP"
 #  model: "data/total_word_feature_extractor.dat"
 #- name: "MitieTokenizer"
+##- name: "JiebaTokenizer"
 #- name: "MitieEntityExtractor"
 #- name: "EntitySynonymMapper"
 #- name: "RegexFeaturizer"
+## MitieIntentClassifier 训练有点慢
 #- name: "MitieIntentClassifier"
 
-#language: "en"
+
+#language: "zh"
 #
 #pipeline:
 #- name: "MitieNLP"
 #  model: "data/total_word_feature_extractor.dat"
 #- name: "MitieTokenizer"
 #- name: "MitieEntityExtractor"
-
 #- name: "EntitySynonymMapper"
 #- name: "RegexFeaturizer"
 #- name: "MitieFeaturizer"
