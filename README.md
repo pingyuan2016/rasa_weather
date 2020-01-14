@@ -1,6 +1,6 @@
 # 本文说明
 
-注：本文是学习使用rasa框架构建任务型聊天机器人，数据和逻辑来自Xiaoquan Kong @ <https://github.com/howl-anderson>，用最新版rasa翻新，感谢大佬，原文详情请看https://github.com/howl-anderson/WeatherBot>
+注：本文是学习使用rasa框架构建任务型聊天机器人，数据和逻辑来自Xiaoquan Kong @ <https://github.com/howl-anderson>，用最新版rasa翻新，感谢大佬，原文详情请看https://github.com/howl-anderson/WeatherBot
 
 ## 环境
 
