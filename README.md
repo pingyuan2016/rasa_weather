@@ -1,4 +1,4 @@
-# rasa_weather安装部署
+# 天气预报聊天机器人安装部署
 
 https://github.com/pingyuan2016/rasa_weather/
 
