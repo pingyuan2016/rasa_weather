@@ -69,7 +69,7 @@ incremental==17.5.0
 isodate==0.6.0
 itsdangerous==1.1.0
 jieba==0.39
-Jinja2==2.10.3
+Jinja2==2.11.3
 jmespath==0.9.4
 joblib==0.14.1
 jsonpickle==1.2
